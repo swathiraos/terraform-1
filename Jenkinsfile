@@ -12,7 +12,7 @@ pipeline {
         AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
     }
 
-   agent  none
+   agent  any
     stages {
         stage('checkout') {
             steps {
