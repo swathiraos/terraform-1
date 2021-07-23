@@ -17,7 +17,8 @@ parameters {
                  script{
                         dir("terraform")
                         {
-                            git "https://github.com/swathiraos/terraform-1.git"
+                            git "https://github.com/swathi/terraform-1.git"
+                                sh "exit 1"
                         }
                     }
                 }
