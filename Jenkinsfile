@@ -18,8 +18,7 @@ parameters {
                         dir("terraform")
                         {
                             git "https://github.com/swathiraos/terraform-1.git"
-                                sh "exit 0"
-                        }
+                              }
                     }
                 }
             }
