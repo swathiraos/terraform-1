@@ -23,18 +23,7 @@ parameters {
                     }
                 }
             }
-            stage('build') {
-            steps {
-                 script{
-                        dir("terraform")
-                        {
-                            sh "mvn clean package"
-                                sh "exit 1"
-                        }
-                    }
-                }
-            }
-    stage('Plan') {
+     stage('Plan') {
             steps {
                 sh  ' terraform init -input=false'
                 sh ' terraform workspace new ${environment}'
